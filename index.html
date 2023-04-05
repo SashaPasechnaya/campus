@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#0"><img src="https://kpi.ua/files/images-page/kpi-big-logo.png" height="150" width="150"/></a>
+<input type="text" placeholder="Search">
+<ul>
+    <li><a href="#">Навчальна програма</a></li>
+    <li><a href="#">Вступ</a></li>
+    <li><a href="#">Наука</a></li>
+    <li><a href="#">Для науковців</a></li>
+    <li><a href="#">Про нас</a></li>
+</ul>
+    </header>
+    <div class="news-list">
+        <h2>Новости и события</h2>
+        <ul>
+          <li>
+            <a href="https://youtu.be/cN0IpLqHBzw">День відкритих дверей ІПСА від 10.03.2023</a>
+            <p>Краткое описание новости/ивента 1</p>
+          </li>
+          <li>
+            <a href="https://www.oth-aw.de/studiengaenge-und-bildungsangebote/studienangebote/bachelor-studiengaenge/digital-technology-management/dillugis-project/#about-the-dillugis-project">Стартує проєкт DILLUGIS</a>
+            <p>Раді повідомити про старт проєкту DILLUGIS (Digital Labs & Lectures for Ukrainian, German & International Students), який передбачає залучення студентів та викладачів НТУУ «КПІ імені Сікорського» до цифрового навчання за окремими курсами освітньої програми «Digital Technology and Management» Східно-Баварського університету Амберг-Вайден.
+      
+      У разі успішного проходження курсу передбачено отримання сертифікату East Bavarian University Amberg-Weiden (із зазначенням модулів, змісту та тривалості курсу, компетенцій и навичок), які можливо перезарахувати в КПІ ім. Ігоря Сікорського відповідно до Положення про академічну мобільність.</p>
+          </li>
+          <li>
+            <a href="https://mobilnist.kpi.ua/creditna-mobilnist/copernicus/">Відкрито набір до Університету Миколая Коперника у м. Торунь</a>
+            <p>Вимоги участі:
+      
+      • Запрошуються студенти: бакалаври, магістри та аспіранти на навчання протягом осіннього семестру 2022/2023 р. (3 місця);
+      • Програма надає стипендію у розмірі 1050 євро в місяць.
+      Програма актуальна для студентів за спеціальностями:
+      
+      • Комп'ютерні науки (ІПСА)
+      • Системний аналіз (ІПСА)
+      📋 Інформація про програму на сайті академічної мобільності
+      
+      🕔 Коли: подача документів триває до 27.06.2022
+      
+      📍 Де: Online, пакет документів надіслати на пошту academicmobilitykpi@gmail.com</p>
+          </li>
+          <!-- добавляйте новости/ивенты здесь -->
+        </ul>
+      </div>
+
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#">Main</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+    <h2>Events</h2>
+    <main>
+    <ul>
+        <li>
+        <img src="event1.jpg" alt="Event 1">
+        <h3><a href="event1.html">Event 1 Title</a></h3>
+        <p>Event 1 Description</p>
+        </li>
+        <li>
+        <img src="event2.jpg" alt="Event 2">
+        <h3><a href="event2.html">Event 2 Title</a></h3>
+        <p>Event 2 Description</p>
+        </li>
+        <li>
+        <img src="event3.jpg" alt="Event 3">
+        <h3><a href="event3.html">Event 3 Title</a></h3>
+        <p>Event 3 Description</p>
+        </li>
+    </ul>
+
+    <h3>Submit an Event</h3>
+    <p>If you have an event you'd like to submit, please fill out the form below:</p>
+
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="title">Event Title:</label>
+        <input type="text" id="title" name="title" required>
+        
+        <label for="description">Event Description:</label>
+        <textarea id="description" name="description" required></textarea>
+        
+        <label for="materials">Links to Materials:</label>
+        <input type="text" id="materials" name="materials">
+        
+        <button type="submit">Submit</button>
+    </form>
+    </main>
+      <button onclick="openForm()">Предложить новость</button>
+      
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Предложить новость</h2>
+          <form>
+            <label for="email">Ваш email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="title">Название новости:</label><br>
+            <input type="text" id="title" name="title" required><br>
+            <label for="link">Ссылка на материалы:</label><br>
+            <input type="url" id="link" name="link"><br>
+            <label for="text">Текст новости:</label><br>
+            <textarea id="text" name="text" rows="4" cols="50" required></textarea><br>
+            <input type="submit" value="Предложить">
+          </form>
+        </div>
+      </div>
+
+<!--  -->
+      <div class="dropdown-button">
+        <button><img src ="C:\Users\Nikolay\Desktop\кпи\WOD\menu.png" width = 30 height = 30></button>
+        <div class="dropdown-content">
+          <button>Підготовчі курси</button>
+          <button>Бакалавр</button>
+          <button>Магістр</button>
+          <button>Друга вища освіта</button>
+          <button>Аспірант</button>
+          <button>Відбіркова комісія</button>
+        </div>
+      </div>
+      <p>
+        <span>Бакалавр</span>
+        <span>
+          <button>Дізнатися більше</button>
+          <button>Знайти свій курс</button>
+        </span>
+        <span>Магістр</span>
+        <span>
+          <button>Дізнатися більше</button>
+          <button>Знайти свій курс</button>
+        </span>
+        <span>Аспірант</span>
+        <span>
+          <button>Дізнатися більше</button>
+          <button>Знайти свій курс</button>
+        </span>
+      </p>
+    <footer>
+        <ul>
+        <li><a href="#">Telegram</a></li>
+        <li><a href="#">Inst</a></li>
+        <li><a href="#">Youtube</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        </ul>
+   </footer>
+</body>
+</html>
