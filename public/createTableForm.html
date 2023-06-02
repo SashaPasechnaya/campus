@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Форма создания таблицы</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#createTableForm').submit(function(event) {
+        event.preventDefault();
+        var tableName = $('#tableName').val();
+        
+        $.ajax({
+          url: 'scripts/create_table.php',
+          type: 'POST',
+          data: {tableName: tableName},
+          success: function(response) {
+            alert(response);
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <h2>Форма создания таблицы</h2>
+  <form id="createTableForm">
+    <label for="tableName">Имя таблицы:</label>
+    <input type="text" id="tableName" name="tableName" required>
+    <br><br>
+    <input type="submit" value="Создать таблицу">
+  </form>
+</body>
+</html>
