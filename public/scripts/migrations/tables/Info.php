@@ -28,11 +28,9 @@
         public static function defaultInsert(): string
         {
             $tableName = self::TABLE;
-            $id = self::ID;
             $title = self::TITLE;
             $description = self::DESCRIPTION;
             $imagePath = self::IMAGE_PATH;
-            $createdAt = self::CREATED_AT;
 
             return "INSERT INTO $tableName ($title,$description,$imagePath)
             VALUES("Важлива інформація для вступників та керівників закладів освіти","Шановні друзі, війна змінила наші життя, і певні події складно планувати. Однак якщо ви цього року розглядаєте можливість вступати до закладів вищої освіти України (бакалаврський ступінь), будь ласка, ознайомтеся з інформацією, поданою за посиланням нижче.","-"),
@@ -46,13 +44,10 @@
         public static function userInsert($title_user,$description_user): string
         {
             $tableName = self::TABLE;
-            $id = self::ID;
             $title = self::TITLE;
             $description = self::DESCRIPTION;
-            $imagePath = self::IMAGE_PATH;
-            $createdAt = self::CREATED_AT;
 
-            return "INSERT INTO $tableName ($title,$description,$imagePath) VALUES ($title_user,$description_user);";
+            return "INSERT INTO $tableName ($title,$description) VALUES ($title_user,$description_user);";
         }
     }
 ?>
