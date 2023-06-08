@@ -1,3 +1,8 @@
+@font-face {
+  font-family: MyCustomFont;
+  src: url('https://fonts.google.com/noto/specimen/Noto+Serif');
+}
+
 .lnr {
   display: inline-block;
   fill: currentColor;
@@ -19,6 +24,7 @@
 
 body {
   background-color: #ffffff;
+  font-family: MyCustomFont, sans-serif;
 }
 
 header {
