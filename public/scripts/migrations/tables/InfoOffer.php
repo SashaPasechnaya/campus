@@ -27,5 +27,14 @@
                 $createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )";
         }
+
+        public static function userInsert($title_user,$description_user): string
+        {
+            $tableName = self::TABLE;
+            $title = self::TITLE;
+            $description = self::DESCRIPTION;
+
+            return "INSERT INTO $tableName ($title,$description) VALUES ($title_user,$description_user);";
+        }
     }
 ?>

@@ -15,5 +15,7 @@
 		$provider->request($query);
 	}
 
+	$provider->request(Info::defaultInsert());
+
 	$provider->closeConnection();
 ?>
