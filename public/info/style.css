@@ -1,3 +1,9 @@
+@font-face {
+  font-family: MyCustomFont;
+  src: url('https://fonts.google.com/noto/specimen/Noto+Serif');
+}
+
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -30,6 +36,7 @@ th, td {
 
 body {
   background-color: #ffffff;
+  font-family: MyCustomFont, sans-serif;
 }
 
 header {
