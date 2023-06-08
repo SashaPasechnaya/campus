@@ -39,7 +39,7 @@
                         <ul>
                             <li><a href="https://iasa.kpi.ua/courses">Підготовчі курси</a></li>
                             <li><a href="https://iasa.kpi.ua/bachelor-admission">Бакалавр</a></li>
-                            <li><a href="https://iasa.kpi.ua/master-admission">Магістр</a></li>
+                            <li><a href="info/master.html">Магістр</a></li>
                             <li><a href="https://iasa.kpi.ua/phd-admission">Аспірантура</a></li>
                         </ul>
                     </li>
@@ -52,7 +52,7 @@
                     <li><a href="#">Про нас</a>
                         <ul>
                             <li><a href="https://schedule.kpi.ua/">Розклад</a></li>
-                            <li><a href="https://iasa.kpi.ua/contacts">Контакти</a></li>
+                            <li><a href="info/contacts.html">Контакти</a></li>
                         </ul>
                     </li>
                 </ul>
