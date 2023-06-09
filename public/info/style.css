@@ -1,0 +1,373 @@
+@font-face {
+  font-family: MyCustomFont;
+  src: url('https://fonts.google.com/noto/specimen/Noto+Serif');
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+.lnr {
+  display: inline-block;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.05em;
+}
+
+.lnr-graduation-hat {
+  color: #000000;
+  font-size: 80px;
+}
+
+.lnr-magnifier {
+  color: #ffffff;
+  font-size: 20px;
+
+}
+
+body {
+  background-color: #ffffff;
+  font-family: MyCustomFont, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+header a {
+  display: block;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+header input[type="text"] {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+
+header button[type="submit"] {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav li {
+  position: relative;
+}
+
+header nav a {
+  display: block;
+  padding: 1rem;
+  color: #000000;
+  text-decoration: none;
+}
+
+header nav ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  display: none;
+}
+
+header nav ul li:hover > ul {
+  display: block;
+}
+
+header nav ul ul li {
+  position: relative;
+  width: 100%;
+}
+
+header nav ul ul a {
+  padding: 0.5rem 1rem;
+}
+
+header nav ul ul ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+header nav a:hover,
+header nav a:focus,
+header nav ul ul a:hover,
+header nav ul ul a:focus {
+  background-color:#6BBBAE;;
+  color: #000000;
+}
+
+.intro {
+  background-color: #f8f8f8;
+  position: relative;
+  height: 500px;
+}
+.intro-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+.intro-list li {
+  margin: 0 20px;
+  text-align: center;
+}
+  
+.intro-list h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+  
+.btn {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color:#6BBBAE;;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+  
+.btn:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.news {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+  
+/* Стили для контейнера */
+.container {
+  max-width: 960px;
+  margin: 10 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+  
+/* Стили для заголовка */
+h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* .information{
+  background-color:#6BBBAE;
+} */
+  
+/* Стили для списка новостей */
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  
+/* Стили для каждой новости */
+.news-list li {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-start;
+  margin-bottom: 30px;
+  align-items: center;
+  background-color: #edfaf1;
+}
+  
+/* Стили для изображения */
+.news-list li img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 0px;
+}
+
+/* Стили для заголовка новости */
+.news-list li h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* Стили для текста новости */
+.news-list li p {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 0px;
+  text-align: left;
+}
+  
+/* Стили для ссылки "Детальніше" */
+.news-list li a {
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  color:#6BBBAE;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Стили для формы */
+.news form {
+  margin-top: 30px;
+}
+  
+/* Стили для полей ввода */
+.news form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+  
+.news form input,
+.news form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+  
+  /* Стили для кнопки отправки формы */
+  .news form button[type="submit"] {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Стили при наведении на кнопку отправки формы */
+  .news form button[type="submit"]:hover {
+    background-color: #333;
+  }
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+}
+  
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+  
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+  
+footer ul.tel li {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+  
+footer ul.social-links li {
+  margin: 0 10px;
+  display: inline-block;
+}
+  
+footer ul.social-links li a {
+  color: #ffffff;
+}
+  
+footer ul.social-links li a:hover {
+  text-decoration: underline;
+}
+
+  /* Для екранів ширше 1200 пікселів */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+/* Для екранів ширше 992 пікселів */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+/* Для екранів ширше 768 пікселів */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+/* Для екранів ширше 576 пікселів */
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+}
+
+/* Для екранів менше 576 пікселів */
+@media (max-width: 575px) {
+  .container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
+}
