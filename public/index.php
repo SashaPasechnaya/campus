@@ -37,7 +37,7 @@
                     </li>
                     <li><a href="#">Вступ</a>
                         <ul>
-                            <li><a href="https://iasa.kpi.ua/courses">Підготовчі курси</a></li>
+                            <li><a href="info/courses.html">Підготовчі курси</a></li>
                             <li><a href="https://iasa.kpi.ua/bachelor-admission">Бакалавр</a></li>
                             <li><a href="info/master.html">Магістр</a></li>
                             <li><a href="https://iasa.kpi.ua/phd-admission">Аспірантура</a></li>
@@ -79,32 +79,24 @@
                         $password = "pass";
                         $dbname = "campus";
 
-                        // Создание соединения
                         $conn = new mysqli($servername, $username, $password, $dbname);
 
-                        // Проверка соединения
                         if ($conn->connect_error) {
                             die("Ошибка соединения: " . $conn->connect_error);
                         }
                     ?>
                     <?php
-                        // SQL-запрос
                         $sql = "SELECT * FROM info";
 
-                        // Выполнение запроса
                         $result = $conn->query($sql);
                         
-                        // Проверка наличия данных
                         if ($result->num_rows > 0) {
-                            // Цикл для обхода результатов запроса
                             while ($row = $result->fetch_assoc()) {
-                                // Получение значений полей
                                 $title = $row['title'];
                                 $description = $row['description'];
                                 $imagePath = $row['image_path'];
                                 $detailsLink = $row['details_link'];
 
-                                // Отображение данных на странице
                                 echo "<li>";
                                 echo "<img src='$imagePath' alt='$title'>";
                                 echo "<div>";
@@ -117,7 +109,6 @@
                             echo "Нет доступных новостей.";
                         }
 
-                        // Закрытие соединения с базой данных
                         $conn->close();
                     ?>
                 </ul>
