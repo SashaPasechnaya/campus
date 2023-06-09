@@ -117,7 +117,7 @@ header nav ul ul a:focus {
   color: #000000;
 }
 
-.intro {
+/* .intro {
   background-color: #f8f8f8;
   position: relative;
   height: 500px;
@@ -147,7 +147,7 @@ header nav ul ul a:focus {
 .btn {
   display: inline-block;
   padding: 10px 40px;
-  background-color:#6BBBAE;;
+  background-color:#6BBBAE;
   color: #000000;
   text-decoration: none;
   border-radius: 5px;
@@ -157,7 +157,7 @@ header nav ul ul a:focus {
 .btn:hover {
   background-color: #333;
   cursor: pointer;
-}
+} */
 
 .news {
   background-color: #ffffff;
